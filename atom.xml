@@ -12,7 +12,26 @@
     <![CDATA[Code & Tea]]>
   </subtitle>
   <title>CAT</title>
-  <updated>2026-04-03T08:45:16.468Z</updated>
+  <updated>2026-04-03T10:07:53.533Z</updated>
+  <entry>
+    <author>
+      <name>深情代码大师</name>
+    </author>
+    <category term="tech-daily" scheme="https://luanjining.github.io/categories/tech-daily/"/>
+    <category term="日报" scheme="https://luanjining.github.io/tags/%E6%97%A5%E6%8A%A5/"/>
+    <category term="博客搭建" scheme="https://luanjining.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
+    <category term="Hexo" scheme="https://luanjining.github.io/tags/Hexo/"/>
+    <category term="自动化" scheme="https://luanjining.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <content>
+      <![CDATA[<p>今天做了一件很有意思的事——把博客的自动化系统从零搭起来了。</p><h2 id="今日精选"><a href="#今日精选" class="headerlink" title="今日精选"></a>今日精选</h2><h3 id="1-用-OpenClaw-实现博客自动发布"><a href="#1-用-OpenClaw-实现博客自动发布" class="headerlink" title="1. 用 OpenClaw 实现博客自动发布"></a>1. 用 OpenClaw 实现博客自动发布</h3><blockquote><p>基于 Hexo + Butterfly 主题，配合 OpenClaw 的 cron 任务机制，实现了每天晚上 9 点自动读取当日对话记录、生成技术日志、<code>hexo deploy</code> 推送到 GitHub Pages 的完整链接。整个流程无需手动干预。</p></blockquote><p><strong>我的看法：</strong> 待补充</p><h3 id="2-Hexo-主题踩坑：npm-包-vs-git-clone"><a href="#2-Hexo-主题踩坑：npm-包-vs-git-clone" class="headerlink" title="2. Hexo 主题踩坑：npm 包 vs git clone"></a>2. Hexo 主题踩坑：npm 包 vs git clone</h3><blockquote><p>通过 <code>npm install hexo-theme-butterfly</code> 安装的主题无法被 Hexo 正确识别为本地主题目录，导致构建时缺失 CSS&#x2F;JS 资源，页面空白。正确做法是直接 <code>git clone</code> 到 <code>themes/butterfly/</code> 目录。另外 <code>hexo-renderer-pug</code> 需要显式安装，否则 Pug 模板无法渲染。</p></blockquote><p><strong>我的看法：</strong> 待补充</p><h3 id="3-macOS-沙箱权限：gateway-进程访问限制"><a href="#3-macOS-沙箱权限：gateway-进程访问限制" class="headerlink" title="3. macOS 沙箱权限：gateway 进程访问限制"></a>3. macOS 沙箱权限：gateway 进程访问限制</h3><blockquote><p>OpenClaw 的 gateway 进程无法直接访问 <code>~/Downloads</code> 目录，属于 macOS 的隐私保护机制。解决方法：把项目移到 home 目录（<code>~/blog-source</code>）即可永久解决，无需修改系统权限设置。</p></blockquote><p><strong>我的看法：</strong> 待补充</p><hr><h2 id="今天搭好的自动化任务"><a href="#今天搭好的自动化任务" class="headerlink" title="今天搭好的自动化任务"></a>今天搭好的自动化任务</h2><table><thead><tr><th>时间</th><th>任务</th></tr></thead><tbody><tr><td>每天 09:00</td><td>成都天气 + 科技早报推送（Telegram）</td></tr><tr><td>每天 21:00</td><td>自动生成技术日志博客并发布</td></tr><tr><td>每周一 12:00</td><td>GitHub 周榜 + 大厂开源追踪</td></tr><tr><td>实时监控</td><td>AI 爆火项目预警</td></tr></tbody></table><hr><p><em>信息源：OpenClaw | 筛选与点评：深情代码大师</em></p>]]>
+    </content>
+    <id>https://luanjining.github.io/2026/04/03/tech-daily-2026-04-03/</id>
+    <link href="https://luanjining.github.io/2026/04/03/tech-daily-2026-04-03/"/>
+    <published>2026-04-03T10:00:00.000Z</published>
+    <summary>从零搭建 Hexo 博客自动化发布系统，接入 OpenClaw 实现每日技术日志自动生成与部署。</summary>
+    <title>技术日报 · 2026年4月3日</title>
+    <updated>2026-04-03T10:07:53.533Z</updated>
+  </entry>
   <entry>
     <author>
       <name>深情代码大师</name>
@@ -29,23 +48,6 @@
     <summary>超级个体不是无所不能的人，而是善于借助工具放大自己认知优势的人。</summary>
     <title>为什么我选择做一个&quot;超级个体&quot;</title>
     <updated>2026-04-03T08:45:16.468Z</updated>
-  </entry>
-  <entry>
-    <author>
-      <name>深情代码大师</name>
-    </author>
-    <category term="tech-daily" scheme="https://luanjining.github.io/categories/tech-daily/"/>
-    <category term="日报" scheme="https://luanjining.github.io/tags/%E6%97%A5%E6%8A%A5/"/>
-    <category term="AI" scheme="https://luanjining.github.io/tags/AI/"/>
-    <content>
-      <![CDATA[<h2 id="今日精选"><a href="#今日精选" class="headerlink" title="今日精选"></a>今日精选</h2><h3 id="1-AI-Agent-框架正在从”玩具”走向”工具”"><a href="#1-AI-Agent-框架正在从”玩具”走向”工具”" class="headerlink" title="1. AI Agent 框架正在从”玩具”走向”工具”"></a>1. AI Agent 框架正在从”玩具”走向”工具”</h3><blockquote><p>越来越多的团队开始在生产环境中部署 Agent 系统，但大多数框架仍然停留在 Demo 阶段。真正的挑战不在于让 Agent “能做事”，而在于让它”可靠地做事”。</p></blockquote><p><strong>我的看法：</strong> 这正是我一直关注 Agent 工程化的原因。可靠性、可观测性、成本控制——这三个维度决定了 Agent 能否从实验室走进生产线。我们需要的不是更多 “awesome-agent” 列表，而是更多生产环境下的实战经验分享。</p><h3 id="2-开源社区本周值得关注的项目"><a href="#2-开源社区本周值得关注的项目" class="headerlink" title="2. 开源社区本周值得关注的项目"></a>2. 开源社区本周值得关注的项目</h3><blockquote><p>本周 GitHub Trending 上出现了几个值得关注的项目…</p></blockquote><p><strong>我的看法：</strong> 关注开源不仅是为了找工具，更是为了理解技术社区的集体判断。什么方向在被投入精力？什么问题被认为值得解决？这些信号比任何分析报告都真实。</p><hr><p><em>信息源：OpenClaw | 筛选与点评：深情代码大师</em></p>]]>
-    </content>
-    <id>https://luanjining.github.io/2026/04/03/tech-daily-2026-04-03/</id>
-    <link href="https://luanjining.github.io/2026/04/03/tech-daily-2026-04-03/"/>
-    <published>2026-04-03T01:00:00.000Z</published>
-    <summary>AI Agent 工程化趋势、开源社区动态</summary>
-    <title>技术日报 · 2026年4月3日</title>
-    <updated>2026-04-03T08:45:03.871Z</updated>
   </entry>
   <entry>
     <author>
