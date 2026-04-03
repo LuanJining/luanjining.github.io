@@ -111,6 +111,24 @@ code, pre, .highlight {
   background-color: var(--cat-bg);
 }
 
+/* 文章页头部背景：覆盖 Butterfly 默认蓝色 */
+#page-header {
+  background-color: var(--cat-accent) !important;
+  background-image: none !important;
+}
+
+/* 文章页头部文字颜色 */
+#page-header .post-info,
+#page-header .post-info a,
+#page-header .post-info i,
+#page-header .article-meta-wrap,
+#page-header .article-meta-wrap a,
+#page-header .article-title,
+#page-header h1 {
+  color: #fff !important;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
 /* site-info title color is handled by #site-title above */
 
 /* --- Navigation --- */
