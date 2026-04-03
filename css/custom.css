@@ -1,0 +1,438 @@
+/* ==========================================
+   CAT 代码与茶 - 文人书房主题
+   ========================================== */
+
+/* --- CSS Variables (Light Mode) --- */
+:root {
+  --cat-bg: #faf8f5;
+  --cat-card-bg: #ffffff;
+  --cat-text: #2c2c2c;
+  --cat-text-secondary: #8a7e72;
+  --cat-accent: #c8a882;
+  --cat-border: #e8e0d8;
+  --cat-link: #6b5b4a;
+  --cat-link-hover: #c8a882;
+  --cat-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+  --cat-font-heading: 'Noto Serif SC', 'Source Han Serif CN', Georgia, serif;
+  --cat-font-body: 'Noto Serif SC', 'Source Han Serif CN', Georgia, serif;
+  --cat-font-mono: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', Consolas, monospace;
+
+  /* Category colors */
+  --cat-tech-daily: #c75c5c;
+  --cat-cognition: #5c7ea8;
+  --cat-essay: #6a9a7a;
+  --cat-movie: #b89a5a;
+}
+
+/* --- CSS Variables (Dark Mode) --- */
+[data-theme="dark"] {
+  --cat-bg: #1a1a1e;
+  --cat-card-bg: #252528;
+  --cat-text: #d4d0cb;
+  --cat-text-secondary: #9a9490;
+  --cat-accent: #c8a882;
+  --cat-border: #3a3a3e;
+  --cat-link: #d4b896;
+  --cat-link-hover: #e8d4b8;
+  --cat-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Global --- */
+body {
+  font-family: var(--cat-font-body);
+  color: var(--cat-text);
+}
+
+/* Page body background - warm tone */
+body {
+  background: var(--cat-bg);
+}
+
+[data-theme="dark"] body {
+  background: var(--cat-bg);
+}
+
+/* --- Typography --- */
+h1, h2, h3, h4, h5, h6,
+.article-title,
+.site-name,
+.author-info-name,
+.item-headline span {
+  font-family: var(--cat-font-heading);
+  color: var(--cat-text);
+}
+
+.site-name {
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#site-title {
+  font-family: var(--cat-font-heading);
+  letter-spacing: 3px;
+  font-size: 3.5em !important;
+  color: #fff !important;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+#subtitle,
+#subtitle .typed-cursor {
+  font-family: var(--cat-font-heading);
+  font-size: 1.2em;
+  font-style: normal;
+  color: var(--cat-text) !important;
+  letter-spacing: 1px;
+}
+
+/* Social icons on header */
+#site_social_icons a {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#site_social_icons a:hover {
+  color: #fff;
+}
+
+a {
+  color: var(--cat-link);
+}
+
+a:hover {
+  color: var(--cat-link-hover);
+}
+
+/* --- Code --- */
+code, pre, .highlight {
+  font-family: var(--cat-font-mono) !important;
+}
+
+/* --- Header --- */
+#page-header.not-top-img {
+  background-color: var(--cat-bg);
+}
+
+/* site-info title color is handled by #site-title above */
+
+/* --- Navigation --- */
+#nav {
+  backdrop-filter: blur(10px);
+}
+
+/* Nav on top of header image: white text */
+#page-header.full_page #nav a,
+#page-header.full_page #nav .site-page,
+#page-header.full_page #nav .site-name {
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+#page-header.full_page #nav a:hover,
+#page-header.full_page #nav .site-page:hover {
+  color: var(--cat-accent);
+}
+
+/* Nav after scrolling / on non-home pages: dark text */
+#nav.fixed a,
+#nav.fixed .site-page,
+#nav.fixed .site-name,
+#page-header.not-top-img #nav a,
+#page-header.not-top-img #nav .site-page {
+  color: var(--cat-text);
+  text-shadow: none;
+}
+
+#nav.fixed a:hover,
+#page-header.not-top-img #nav a:hover {
+  color: var(--cat-accent);
+}
+
+/* --- Cards --- */
+.card-widget,
+.recent-post-item {
+  background: var(--cat-card-bg);
+  border-radius: 8px;
+  box-shadow: var(--cat-shadow);
+  border: 1px solid var(--cat-border);
+}
+
+.card-widget {
+  transition: box-shadow 0.3s ease;
+}
+
+.card-widget:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Article List --- */
+.recent-post-info .article-title {
+  font-family: var(--cat-font-heading);
+  font-weight: 600;
+  color: var(--cat-text);
+}
+
+.recent-post-info .article-title:hover {
+  color: var(--cat-accent);
+}
+
+.recent-post-info .content {
+  color: var(--cat-text-secondary);
+  font-size: 0.92em;
+  line-height: 1.8;
+}
+
+.article-meta-wrap {
+  color: var(--cat-text-secondary);
+}
+
+/* --- Category Colors --- */
+.category-list a[href*="tech-daily"],
+a.article-meta__categories[href*="tech-daily"] {
+  color: var(--cat-tech-daily) !important;
+}
+
+.category-list a[href*="cognition"],
+a.article-meta__categories[href*="cognition"] {
+  color: var(--cat-cognition) !important;
+}
+
+.category-list a[href*="essay"],
+a.article-meta__categories[href*="essay"] {
+  color: var(--cat-essay) !important;
+}
+
+.category-list a[href*="movie"],
+a.article-meta__categories[href*="movie"] {
+  color: var(--cat-movie) !important;
+}
+
+/* --- Post Content --- */
+#article-container {
+  font-family: var(--cat-font-body);
+  color: var(--cat-text);
+  line-height: 1.9;
+  font-size: 1.05em;
+}
+
+#article-container h1,
+#article-container h2,
+#article-container h3,
+#article-container h4 {
+  font-family: var(--cat-font-heading);
+  color: var(--cat-text);
+  border-bottom: none;
+}
+
+#article-container h2 {
+  border-bottom: 1px solid var(--cat-border);
+  padding-bottom: 0.3em;
+}
+
+/* Blockquote - 茶金色左边框 */
+#article-container blockquote {
+  border-left: 3px solid var(--cat-accent);
+  background: rgba(200, 168, 130, 0.06);
+  color: var(--cat-text-secondary);
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+  border-radius: 0 6px 6px 0;
+  font-style: italic;
+}
+
+[data-theme="dark"] #article-container blockquote {
+  background: rgba(200, 168, 130, 0.08);
+}
+
+/* --- Sidebar --- */
+.author-info-description {
+  font-family: var(--cat-font-body);
+  font-style: italic;
+  color: var(--cat-text-secondary);
+}
+
+.item-headline i {
+  color: var(--cat-accent);
+}
+
+.card-tag-cloud a {
+  color: var(--cat-text-secondary) !important;
+}
+
+.card-tag-cloud a:hover {
+  color: var(--cat-accent) !important;
+}
+
+/* --- Announcement Card --- */
+.card-announcement .announcement_content {
+  font-family: var(--cat-font-body);
+  color: var(--cat-text-secondary);
+  line-height: 1.7;
+}
+
+/* --- Custom Widget: Tech Daily --- */
+.card-widget.card-tech-daily .item-content {
+  font-family: var(--cat-font-body);
+}
+
+.card-widget.card-tech-daily .tech-daily-item {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--cat-border);
+}
+
+.card-widget.card-tech-daily .tech-daily-item:last-child {
+  border-bottom: none;
+}
+
+.card-widget.card-tech-daily .tech-daily-item a {
+  color: var(--cat-text);
+  font-size: 0.9em;
+}
+
+.card-widget.card-tech-daily .tech-daily-item a:hover {
+  color: var(--cat-accent);
+}
+
+.card-widget.card-tech-daily .tech-daily-date {
+  font-size: 0.78em;
+  color: var(--cat-text-secondary);
+}
+
+/* --- Footer --- */
+#footer {
+  background: var(--cat-bg) !important;
+  border-top: 1px solid var(--cat-border);
+}
+
+#footer-wrap {
+  color: var(--cat-text-secondary);
+  font-family: var(--cat-font-body);
+}
+
+#footer a {
+  color: var(--cat-link);
+}
+
+.footer_custom_text {
+  font-style: italic;
+  color: var(--cat-accent);
+}
+
+/* --- Pagination --- */
+.pagination .page-number.current {
+  background: var(--cat-accent);
+  color: #fff;
+  border-color: var(--cat-accent);
+}
+
+.pagination .page-number:hover {
+  background: var(--cat-accent);
+  color: #fff;
+}
+
+/* --- Scrollbar --- */
+::-webkit-scrollbar-thumb {
+  background: var(--cat-accent);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--cat-border);
+}
+
+/* --- Selection --- */
+::selection {
+  background: rgba(200, 168, 130, 0.3);
+  color: var(--cat-text);
+}
+
+/* --- Right Side Buttons --- */
+#rightside button {
+  background: var(--cat-card-bg);
+  color: var(--cat-text);
+  border: 1px solid var(--cat-border);
+}
+
+#rightside button:hover {
+  background: var(--cat-accent);
+  color: #fff;
+}
+
+/* --- Search Dialog --- */
+.search-dialog {
+  background: var(--cat-card-bg);
+  border: 1px solid var(--cat-border);
+}
+
+/* --- About Page: Cognitive Map Cards --- */
+.about-cognitive-map {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.cognitive-card {
+  background: var(--cat-card-bg);
+  border: 1px solid var(--cat-border);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--cat-shadow);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.cognitive-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.cognitive-card h3 {
+  font-family: var(--cat-font-heading);
+  color: var(--cat-accent);
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+.cognitive-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cognitive-card ul li {
+  padding: 4px 0;
+  color: var(--cat-text-secondary);
+  font-size: 0.92em;
+}
+
+.cognitive-card ul li::before {
+  content: "· ";
+  color: var(--cat-accent);
+  font-weight: bold;
+}
+
+/* --- About Page: Exploring Section --- */
+.exploring-list {
+  list-style: none;
+  padding: 0;
+}
+
+.exploring-list li {
+  padding: 8px 0;
+  border-bottom: 1px dashed var(--cat-border);
+  color: var(--cat-text);
+}
+
+.exploring-list li:last-child {
+  border-bottom: none;
+}
+
+.exploring-list li .topic-tag {
+  display: inline-block;
+  padding: 1px 8px;
+  border-radius: 10px;
+  font-size: 0.8em;
+  margin-right: 8px;
+}
+
+.topic-tag.tech { background: rgba(199, 92, 92, 0.15); color: var(--cat-tech-daily); }
+.topic-tag.cognition { background: rgba(92, 126, 168, 0.15); color: var(--cat-cognition); }
+.topic-tag.humanities { background: rgba(184, 154, 90, 0.15); color: var(--cat-movie); }

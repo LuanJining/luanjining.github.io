@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <author>
+    <name>深情代码大师</name>
+  </author>
+  <generator uri="https://hexo.io/">Hexo</generator>
+  <id>https://luanjining.github.io/</id>
+  <link href="https://luanjining.github.io/" rel="alternate"/>
+  <link href="https://luanjining.github.io/atom.xml" rel="self"/>
+  <rights>All rights reserved 2026, 深情代码大师</rights>
+  <subtitle>
+    <![CDATA[Code & Tea]]>
+  </subtitle>
+  <title>CAT</title>
+  <updated>2026-04-03T08:45:16.468Z</updated>
+  <entry>
+    <author>
+      <name>深情代码大师</name>
+    </author>
+    <category term="cognition" scheme="https://luanjining.github.io/categories/cognition/"/>
+    <category term="认知" scheme="https://luanjining.github.io/tags/%E8%AE%A4%E7%9F%A5/"/>
+    <category term="超级个体" scheme="https://luanjining.github.io/tags/%E8%B6%85%E7%BA%A7%E4%B8%AA%E4%BD%93/"/>
+    <content>
+      <![CDATA[<h2 id="什么是超级个体"><a href="#什么是超级个体" class="headerlink" title="什么是超级个体"></a>什么是超级个体</h2><p>超级个体不是一个人干十个人的活。它的核心不是”超级”，而是”个体”——一个有独立判断力、善于借助工具和系统放大自身优势的人。</p><p>在 AI 时代，这个概念变得更加具体：</p><ul><li><strong>信息获取</strong>：用 OpenClaw 等工具自动化信息收集，把精力留给判断和表达</li><li><strong>知识输出</strong>：通过博客、社交媒体建立个人品牌，让认知产生复利</li><li><strong>技能杠杆</strong>：用 AI 辅助编码、写作、设计，一个人覆盖过去一个小团队的产出</li></ul><h2 id="为什么是现在"><a href="#为什么是现在" class="headerlink" title="为什么是现在"></a>为什么是现在</h2><p>三个变化让”超级个体”从愿景变成了可行路径：</p><ol><li><strong>AI 工具的成熟</strong> — 不再是概念，而是每天都在用的生产力</li><li><strong>远程协作的普及</strong> — 地理不再是限制</li><li><strong>个人品牌的价值上升</strong> — 公司品牌在弱化，个人品牌在增强</li></ol><h2 id="我的实践"><a href="#我的实践" class="headerlink" title="我的实践"></a>我的实践</h2><p>这个博客就是我的超级个体实验室。我的方法论很简单：</p><blockquote><p>输入 → 思考 → 输出 → 反馈 → 迭代</p></blockquote><p>每天通过技术日报输入信息，通过认知文章和随笔输出思考，通过读者反馈修正方向。这个循环本身就是最好的学习系统。</p><hr><p><em>这是”认知”系列的第一篇。后续会围绕独立思考、信息筛选、决策模型等主题展开。</em></p>]]>
+    </content>
+    <id>https://luanjining.github.io/2026/04/03/cognition-super-individual/</id>
+    <link href="https://luanjining.github.io/2026/04/03/cognition-super-individual/"/>
+    <published>2026-04-03T02:00:00.000Z</published>
+    <summary>超级个体不是无所不能的人，而是善于借助工具放大自己认知优势的人。</summary>
+    <title>为什么我选择做一个&quot;超级个体&quot;</title>
+    <updated>2026-04-03T08:45:16.468Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>深情代码大师</name>
+    </author>
+    <category term="tech-daily" scheme="https://luanjining.github.io/categories/tech-daily/"/>
+    <category term="日报" scheme="https://luanjining.github.io/tags/%E6%97%A5%E6%8A%A5/"/>
+    <category term="AI" scheme="https://luanjining.github.io/tags/AI/"/>
+    <content>
+      <![CDATA[<h2 id="今日精选"><a href="#今日精选" class="headerlink" title="今日精选"></a>今日精选</h2><h3 id="1-AI-Agent-框架正在从”玩具”走向”工具”"><a href="#1-AI-Agent-框架正在从”玩具”走向”工具”" class="headerlink" title="1. AI Agent 框架正在从”玩具”走向”工具”"></a>1. AI Agent 框架正在从”玩具”走向”工具”</h3><blockquote><p>越来越多的团队开始在生产环境中部署 Agent 系统，但大多数框架仍然停留在 Demo 阶段。真正的挑战不在于让 Agent “能做事”，而在于让它”可靠地做事”。</p></blockquote><p><strong>我的看法：</strong> 这正是我一直关注 Agent 工程化的原因。可靠性、可观测性、成本控制——这三个维度决定了 Agent 能否从实验室走进生产线。我们需要的不是更多 “awesome-agent” 列表，而是更多生产环境下的实战经验分享。</p><h3 id="2-开源社区本周值得关注的项目"><a href="#2-开源社区本周值得关注的项目" class="headerlink" title="2. 开源社区本周值得关注的项目"></a>2. 开源社区本周值得关注的项目</h3><blockquote><p>本周 GitHub Trending 上出现了几个值得关注的项目…</p></blockquote><p><strong>我的看法：</strong> 关注开源不仅是为了找工具，更是为了理解技术社区的集体判断。什么方向在被投入精力？什么问题被认为值得解决？这些信号比任何分析报告都真实。</p><hr><p><em>信息源：OpenClaw | 筛选与点评：深情代码大师</em></p>]]>
+    </content>
+    <id>https://luanjining.github.io/2026/04/03/tech-daily-2026-04-03/</id>
+    <link href="https://luanjining.github.io/2026/04/03/tech-daily-2026-04-03/"/>
+    <published>2026-04-03T01:00:00.000Z</published>
+    <summary>AI Agent 工程化趋势、开源社区动态</summary>
+    <title>技术日报 · 2026年4月3日</title>
+    <updated>2026-04-03T08:45:03.871Z</updated>
+  </entry>
+  <entry>
+    <author>
+      <name>深情代码大师</name>
+    </author>
+    <category term="essay" scheme="https://luanjining.github.io/categories/essay/"/>
+    <category term="求职" scheme="https://luanjining.github.io/tags/%E6%B1%82%E8%81%8C/"/>
+    <category term="成长" scheme="https://luanjining.github.io/tags/%E6%88%90%E9%95%BF/"/>
+    <content>
+      <![CDATA[<p>简历开坑，持续更新中…</p>]]>
+    </content>
+    <id>https://luanjining.github.io/2025/07/08/%E7%AE%80%E5%8E%86%E5%BC%80%E5%9D%91/</id>
+    <link href="https://luanjining.github.io/2025/07/08/%E7%AE%80%E5%8E%86%E5%BC%80%E5%9D%91/"/>
+    <published>2025-07-08T03:47:48.000Z</published>
+    <summary>简历开坑，持续更新中。记录互联网求职路上的思考与实践。</summary>
+    <title>互联网求职：硬实力与软实力的双重奏</title>
+    <updated>2026-04-03T08:40:45.190Z</updated>
+  </entry>
+</feed>
