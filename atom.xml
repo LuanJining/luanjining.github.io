@@ -12,25 +12,25 @@
     <![CDATA[Code & Tea]]>
   </subtitle>
   <title>CAT</title>
-  <updated>2026-04-03T10:07:53.533Z</updated>
+  <updated>2026-04-03T10:43:33.677Z</updated>
   <entry>
     <author>
       <name>深情代码大师</name>
     </author>
-    <category term="tech-daily" scheme="https://luanjining.github.io/categories/tech-daily/"/>
-    <category term="日报" scheme="https://luanjining.github.io/tags/%E6%97%A5%E6%8A%A5/"/>
-    <category term="博客搭建" scheme="https://luanjining.github.io/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
-    <category term="Hexo" scheme="https://luanjining.github.io/tags/Hexo/"/>
-    <category term="自动化" scheme="https://luanjining.github.io/tags/%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <category term="cognition" scheme="https://luanjining.github.io/categories/cognition/"/>
+    <category term="认知" scheme="https://luanjining.github.io/tags/%E8%AE%A4%E7%9F%A5/"/>
+    <category term="超级个体" scheme="https://luanjining.github.io/tags/%E8%B6%85%E7%BA%A7%E4%B8%AA%E4%BD%93/"/>
+    <category term="AI" scheme="https://luanjining.github.io/tags/AI/"/>
+    <category term="方法论" scheme="https://luanjining.github.io/tags/%E6%96%B9%E6%B3%95%E8%AE%BA/"/>
     <content>
-      <![CDATA[<p>今天做了一件很有意思的事——把博客的自动化系统从零搭起来了。</p><h2 id="今日精选"><a href="#今日精选" class="headerlink" title="今日精选"></a>今日精选</h2><h3 id="1-用-OpenClaw-实现博客自动发布"><a href="#1-用-OpenClaw-实现博客自动发布" class="headerlink" title="1. 用 OpenClaw 实现博客自动发布"></a>1. 用 OpenClaw 实现博客自动发布</h3><blockquote><p>基于 Hexo + Butterfly 主题，配合 OpenClaw 的 cron 任务机制，实现了每天晚上 9 点自动读取当日对话记录、生成技术日志、<code>hexo deploy</code> 推送到 GitHub Pages 的完整链接。整个流程无需手动干预。</p></blockquote><p><strong>我的看法：</strong> 待补充</p><h3 id="2-Hexo-主题踩坑：npm-包-vs-git-clone"><a href="#2-Hexo-主题踩坑：npm-包-vs-git-clone" class="headerlink" title="2. Hexo 主题踩坑：npm 包 vs git clone"></a>2. Hexo 主题踩坑：npm 包 vs git clone</h3><blockquote><p>通过 <code>npm install hexo-theme-butterfly</code> 安装的主题无法被 Hexo 正确识别为本地主题目录，导致构建时缺失 CSS&#x2F;JS 资源，页面空白。正确做法是直接 <code>git clone</code> 到 <code>themes/butterfly/</code> 目录。另外 <code>hexo-renderer-pug</code> 需要显式安装，否则 Pug 模板无法渲染。</p></blockquote><p><strong>我的看法：</strong> 待补充</p><h3 id="3-macOS-沙箱权限：gateway-进程访问限制"><a href="#3-macOS-沙箱权限：gateway-进程访问限制" class="headerlink" title="3. macOS 沙箱权限：gateway 进程访问限制"></a>3. macOS 沙箱权限：gateway 进程访问限制</h3><blockquote><p>OpenClaw 的 gateway 进程无法直接访问 <code>~/Downloads</code> 目录，属于 macOS 的隐私保护机制。解决方法：把项目移到 home 目录（<code>~/blog-source</code>）即可永久解决，无需修改系统权限设置。</p></blockquote><p><strong>我的看法：</strong> 待补充</p><hr><h2 id="今天搭好的自动化任务"><a href="#今天搭好的自动化任务" class="headerlink" title="今天搭好的自动化任务"></a>今天搭好的自动化任务</h2><table><thead><tr><th>时间</th><th>任务</th></tr></thead><tbody><tr><td>每天 09:00</td><td>成都天气 + 科技早报推送（Telegram）</td></tr><tr><td>每天 21:00</td><td>自动生成技术日志博客并发布</td></tr><tr><td>每周一 12:00</td><td>GitHub 周榜 + 大厂开源追踪</td></tr><tr><td>实时监控</td><td>AI 爆火项目预警</td></tr></tbody></table><hr><p><em>信息源：OpenClaw | 筛选与点评：深情代码大师</em></p>]]>
+      <![CDATA[<p>今天下午，我用不到两个小时，搭起了一套完整的博客自动化系统。</p><p>Hexo 建站、Butterfly 主题配置、GitHub Pages 部署、定时任务每晚自动读取当天的工作记录、生成文章、推送上线。整套流程，从零开始，两个小时。</p><p>我没有提前查文档，没有看教程，甚至中间遇到了 macOS 权限报错、Pug 模板渲染失败、npm 包识别异常——这些放在以前，每一个都能卡我半天。</p><p>但今天，它们只是对话框里的几行报错信息。我把错误贴给 AI，继续往下走。</p><span id="more"></span><hr><p>我想从这件事说一个更大的问题。</p><p>两年前，如果你想做一个类似的系统，你需要先成为某种程度上的”技术人”。不是要你精通，但你至少得懂 Hexo 的目录结构，懂 git 的分支逻辑，懂 cron 表达式，懂 Node.js 的模块系统。每一块知识单独拎出来不难，但把它们拼在一起，中间有大量隐性的认知成本——你不知道自己不知道什么，而这种”未知的未知”才是真正消耗时间的地方。</p><p>这道门槛，筛掉了绝大多数有想法的人。</p><p>不是因为他们不聪明，而是因为他们没有时间，或者没有耐心，或者在漫长的学习曲线中途，把最初的热情消耗完了。</p><hr><p>AI 的出现，把这道门槛几乎抹平了。</p><p>但我想说的不是”AI 多厉害”——这太浅了。我想说的是：<strong>当实现的成本趋近于零，整个游戏的规则就变了。</strong></p><p>以前，稀缺的是技术能力。会写代码的人比不会写的人多了一条腿。这种优势是真实的，因为它需要时间积累，不可复制，很难被绕过。</p><p>现在这个优势正在快速被侵蚀。不是说技术不重要了，而是说<strong>技术不再是瓶颈</strong>了。瓶颈移动到了上游——你有没有一个具体的、想清楚了的、可执行的想法。</p><p>注意我说的是”具体的、想清楚了的”。</p><p>这里有一个很容易踩的坑：很多人以为 AI 时代门槛降低了，所以所有人都能做到。但这个逻辑有问题。门槛降低的是<strong>实现</strong>，门槛反而升高的是<strong>想清楚</strong>。</p><hr><p>我今天能在两小时内搭起这套系统，不是因为我什么都不用做。恰恰相反——在开始之前，我需要非常清楚地知道：我要的是什么功能？触发条件是什么？文章格式是什么？部署到哪里？什么时候算成功？</p><p>这些判断，AI 一个都没帮我做。它只是把我的判断翻译成了代码。</p><p>如果我的想法是模糊的，给我的就是模糊的结果。如果我没想清楚边界条件，系统就会在奇怪的地方出错。AI 是个极其忠实的执行者，但它没有目标感，没有判断力，也不知道你真正想要什么。</p><p><strong>这意味着，”想清楚问题”这件事，反而比以前更重要了。</strong></p><hr><p>然后我又想到了更深的一层。</p><p>“想清楚”听起来简单，但它其实是所有能力里最难被教会的一种。技术可以学，流程可以复制，但判断力是从一次次真实的决策里长出来的——你要做过足够多的事，踩过足够多的坑，在足够多的失败里校准过自己，才能在面对一个新问题的时候，知道什么是关键，什么是噪音。</p><p>以前我们说”执行力”很重要，是因为想法廉价，落地才是壁垒。</p><p>现在落地的成本被压缩了，新的壁垒是：<strong>你有没有在真实世界里积累过足够的判断力？</strong></p><p>这其实对人提出了更高的要求，只是换了一个维度。以前的竞争是”谁掌握了实现的技术”，现在的竞争是”谁对问题本身理解得更深”。</p><hr><p>我觉得这是 AI 时代真正值得想清楚的一件事。</p><p>不是”AI 会不会取代我”——这个问题太宏大，也太虚。</p><p>而是：在实现成本趋近于零的世界里，你准备靠什么建立自己的壁垒？</p><p>我的答案是：靠积累那些 AI 没办法替你积累的东西——真实的经历、失败的教训、对某个领域的深度理解，以及从这些里提炼出来的判断力。</p><p>这些东西，压缩不了。</p>]]>
     </content>
     <id>https://luanjining.github.io/2026/04/03/tech-daily-2026-04-03/</id>
     <link href="https://luanjining.github.io/2026/04/03/tech-daily-2026-04-03/"/>
     <published>2026-04-03T10:00:00.000Z</published>
-    <summary>从零搭建 Hexo 博客自动化发布系统，接入 OpenClaw 实现每日技术日志自动生成与部署。</summary>
-    <title>技术日报 · 2026年4月3日</title>
-    <updated>2026-04-03T10:07:53.533Z</updated>
+    <summary>AI 压缩了从想法到实现的距离，但真正稀缺的，从来都不是执行能力。</summary>
+    <title>想法，才是新时代的稀缺资源</title>
+    <updated>2026-04-03T10:43:33.677Z</updated>
   </entry>
   <entry>
     <author>
